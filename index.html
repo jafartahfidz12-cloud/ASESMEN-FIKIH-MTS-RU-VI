@@ -18,7 +18,7 @@
 <script>
 /* KONFIGURASI: isi dari Supabase Project Settings > API. Jangan pernah menaruh service_role key di sini. */
 const SUPABASE_URL = "https://cpmbdmujazeahhjidbpi.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_tOtLN_Par59_uw0PRyLkPw_vjCePMw9"
+const SUPABASE_ANON_KEY = "sb_publishable_tOtLN_Par59_uw0PRyLkPw_vjCePMw9";
 const configured=SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("GANTI_") && !SUPABASE_ANON_KEY.includes("GANTI_");
 const sb=configured?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
 const $=id=>document.getElementById(id), sections=["welcome","identity","exam","reviewPanel","result","adminLogin","dashboard"];
