@@ -17,8 +17,8 @@
 <div class="footer">© 2026 MTs Raudlatul Ulum VI · Asesmen Fikih Online</div></main><div id="toast" class="toast hidden"></div>
 <script>
 /* KONFIGURASI: isi dari Supabase Project Settings > API. Jangan pernah menaruh service_role key di sini. */
-const SUPABASE_URL="GANTI_DENGAN_PROJECT_URL";
-const SUPABASE_ANON_KEY="GANTI_DENGAN_ANON_PUBLIC_KEY";
+const SUPABASE_URL = "TEMPEL_PROJECT_URL_DI_SINI"
+const SUPABASE_ANON_KEY = "TEMPEL_PUBLISHABLE_KEY_DI_SINI";
 const configured=SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("GANTI_") && !SUPABASE_ANON_KEY.includes("GANTI_");
 const sb=configured?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
 const $=id=>document.getElementById(id), sections=["welcome","identity","exam","reviewPanel","result","adminLogin","dashboard"];
